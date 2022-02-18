@@ -196,38 +196,5 @@ namespace Project_Calculate
 				Console.WriteLine("Грустно");
 			}
 		}
-
-		public static List<double> findRoots(double A, double B, double C)
-		{
-			List<double> roots = new List<double>();
-			double D = B * B - 4 * A * C;
-			if (D == 0)
-			{
-				roots.Add(-B / (2 * A));
-			}
-			else if (D > 0)
-			{
-				roots.Add((-B + Math.Sqrt(D)) / (2 * A));
-				roots.Add((-B - Math.Sqrt(D)) / (2 * A));
-			}
-			return roots;
-		}
-		public void test_findRoots()
-		{
-			double A = 1;
-			double B = 3;
-			double C = -4;
-			List<double> roots = new List<double>() {1, -4};
-
-			Console.Write("ТЕСТ ФУНКЦИИ findRoots():");
-			if (roots.SequenceEqual(findRoots(A, B, C)))
-			{
-				Console.WriteLine("Успешно");
-			}
-			else
-			{
-				Console.WriteLine("Грустно");
-			}
-		}
 	}
 }
