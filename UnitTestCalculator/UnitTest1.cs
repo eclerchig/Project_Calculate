@@ -45,15 +45,5 @@ namespace Project_Calculate
 			double result = -0.5;
 			Assert.AreEqual(result, Project_Calculate.Calculator.division(num1, num2));
 		}
-
-		[TestMethod]
-		public void test_findRoots()
-		{
-			double A = 1;
-			double B = 3;
-			double C = -4;
-			List<double> result = new List<double>() {1, -4};
-			Assert.AreEqual(true, result.SequenceEqual(Project_Calculate.Calculator.findRoots(A, B, C)));
-		}
 	}
 }
