@@ -212,22 +212,5 @@ namespace Project_Calculate
 			}
 			return roots;
 		}
-		public void test_findRoots()
-		{
-			double A = 1;
-			double B = 3;
-			double C = -4;
-			List<double> roots = new List<double>() {1, -4};
-
-			Console.Write("ТЕСТ ФУНКЦИИ findRoots():");
-			if (roots.SequenceEqual(findRoots(A, B, C)))
-			{
-				Console.WriteLine("Успешно");
-			}
-			else
-			{
-				Console.WriteLine("Грустно");
-			}
-		}
 	}
 }
